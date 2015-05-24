@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR4-jn-w9C">
+                                <rect key="frame" x="253" y="413" width="94" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Select Date">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9b-1v-lDh">
+                                <rect key="frame" x="222" y="458" width="157" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Default Date Picker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDatePickerToDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwx-w8-mzK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-QQ-C1S">
+                                <rect key="frame" x="174" y="503" width="252" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Date Mode: Min and Max Date">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDatePickerMinMaxDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGa-aD-x4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-Wc-bAQ">
+                                <rect key="frame" x="172" y="548" width="257" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Date Mode: Count Down Timer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeDatePickerToCountDownTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWJ-lI-pqA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rR4-jn-w9C" secondAttribute="centerX" id="Cde-3n-Hkv"/>
+                            <constraint firstItem="H9b-1v-lDh" firstAttribute="centerX" secondItem="mOh-QQ-C1S" secondAttribute="centerX" constant="0.5" id="OFq-C9-wbA"/>
+                            <constraint firstItem="mOh-QQ-C1S" firstAttribute="top" secondItem="H9b-1v-lDh" secondAttribute="bottom" constant="8" id="OWD-nU-45f"/>
+                            <constraint firstItem="wY7-Wc-bAQ" firstAttribute="top" secondItem="mOh-QQ-C1S" secondAttribute="bottom" constant="8" id="UMY-ev-vyE"/>
+                            <constraint firstItem="wY7-Wc-bAQ" firstAttribute="centerX" secondItem="mOh-QQ-C1S" secondAttribute="centerX" constant="0.5" id="UqP-W4-J3L"/>
+                            <constraint firstItem="H9b-1v-lDh" firstAttribute="centerX" secondItem="rR4-jn-w9C" secondAttribute="centerX" constant="0.5" id="d9Z-OO-zJy"/>
+                            <constraint firstAttribute="centerY" secondItem="rR4-jn-w9C" secondAttribute="centerY" constant="-131" id="ewd-ES-Ngd"/>
+                            <constraint firstItem="H9b-1v-lDh" firstAttribute="top" secondItem="rR4-jn-w9C" secondAttribute="bottom" constant="8" id="f29-Sk-b0i"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="271"/>
+        </scene>
+    </scenes>
+</document>
